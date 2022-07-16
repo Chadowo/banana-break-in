@@ -47,7 +47,7 @@ label asked_unpeeled:
 
     hide b
     "Banana picks up the wine bottle and begins refilling your glass. When he sets it back down, he looks at you expectantly."
-    "You’ve already drank several glasses of wine and are starting to feel tipsy."
+    "You've already drank several glasses of wine and are starting to feel tipsy."
 
 
 label asked_nightclub:
@@ -56,16 +56,16 @@ label asked_nightclub:
 
     hide c
     show b
-    b "Actually, I’m new to the area, so I‘ve been busy unpacking and settling down."
+    b "Actually, I'm new to the area, so I‘ve been busy unpacking and settling down."
 
     hide b
     "It seems like Banana has taken the initiative to explore the neighborhood.
-    You don’t know much about this fruit, though, and you’d like to find out more."
+    You don't know much about this fruit, though, and you'd like to find out more."
 
     menu:
         "What to say?"
 
-        "\"Baxter’s is legit, I can take you there some day.\"":
+        "\"Baxter's is legit, I can take you there some day.\"":
             jump offer_tour
 
         "\"Where did you move from?\"":
@@ -80,12 +80,12 @@ label offer_tour:
     show c confidence
     c "Yeap, just call me anytime."
 
-    "It is an opportune moment to slip him your number, but there’s no paper or pen nearby."
+    "It is an opportune moment to slip him your number, but there's no paper or pen nearby."
 
     hide c
     show b flattered
     "Luckily for you, Banana hands over his phone to you, which shows the {b}Add New Contact{/b} screen."
-    "In the touchscreen era, we don’t have to entertain old-fashioned nonsense."
+    "In the touchscreen era, we don't have to entertain old-fashioned nonsense."
 
     menu:
         b "Here, can you input your number?"
@@ -98,7 +98,7 @@ label offer_tour:
             $ real_number = True
             "You type in your mobile number and hand the phone back to him."
            
-    b "Sweet, you didn’t mistype anything, right? I totally get it,
+    b "Sweet, you didn't mistype anything, right? I totally get it,
     when you have waxy fingers, typing is a pain on mobile devices..."
 
     hide b
@@ -120,7 +120,7 @@ label input_real:
     "Banana seems satisfied, at least."
 
     show b
-    b "With that out of the way, I suppose you may have some other questions. Don’t feel shy, let us strengthen our connection :)"
+    b "With that out of the way, I suppose you may have some other questions. Don't feel shy, let us strengthen our connection :)"
 
     menu:
         "Now's your chance to get closer to Banana."
@@ -135,7 +135,7 @@ label input_fake:
     $ p = Character("Phone", color="#6b6b6b")
 
     p "Hello, this is not the person you are trying to call. The person who gave you this number obviously did not want you to have their real number."
-    p "In case you are wondering why, it may because you are ugly, short, maniac, or you’re just stupid. Have luck getting a mate, loser."
+    p "In case you are wondering why, it may because you are ugly, short, maniac, or you're just stupid. Have luck getting a mate, loser."
 
     show b
     b "I see how it is."
@@ -146,7 +146,7 @@ label asked_moved:
 
     show b
     b "I came from the Underside. So glad to not have to wake up at 4 A.M. to some dumb asses yelling."
-    "How’s the noise around here?"
+    "How's the noise around here?"
 
     hide b
 
@@ -156,7 +156,7 @@ label asked_moved:
     menu:
         "Banana asked about the noise around here. Your answser?"
 
-        "\"The noise isn’t too bad...\"":
+        "\"The noise isn't too bad...\"":
             jump mention_sirens
         
         "\"The walls here are thinner than crackers... \"":
@@ -165,27 +165,27 @@ label asked_moved:
 
 label mention_sirens:
     show c confidence
-    c "The noise isn’t too bad. Only the normal stuff like sirens and bar fights."
+    c "The noise isn't too bad. Only the normal stuff like sirens and bar fights."
     
     hide c
 
     show b
-    b "Now that you’ve mentioned sirens, I gotta say, I’m not a huge fan of the cops."
+    b "Now that you've mentioned sirens, I gotta say, I'm not a huge fan of the cops."
     "Those bastards make any excuse to pat you down with a friendly nudge of a taser."
     show b sad
-    b "Have you ever been pulled over while on the way to your niece’s birthday party, and when they spotted your gift cash,
+    b "Have you ever been pulled over while on the way to your niece's birthday party, and when they spotted your gift cash,
     they took it away in the name of public safety?"
 
     hide b
     show c afraid
-    c "That’s... oddly specific. And understandable."
+    c "That's... oddly specific. And understandable."
     
     jump truth_dare
 
 label mention_thin_walls:
 
     show c
-    c "The walls here are thinner than crackers, and someone’s illegal emotional support animal keeps howling, right above my bedroom ceiling."
+    c "The walls here are thinner than crackers, and someone's illegal emotional support animal keeps howling, right above my bedroom ceiling."
     
     hide c
     
@@ -198,8 +198,8 @@ label mention_thin_walls:
     "..."
     "..."
     show c confidence
-    c "On second thought, it’s just a minor nitpick and nothing too serious, and there’s no need to go out of your way on our date.
-    Let’s hit it off with positive vibes!"
+    c "On second thought, it's just a minor nitpick and nothing too serious, and there's no need to go out of your way on our date.
+    Let's hit it off with positive vibes!"
 
     hide c
     show b
@@ -210,7 +210,7 @@ label truth_dare:
     hide c
 
     show b surprised
-    b "So, I just had this PERFECT idea to kill some time, how about we play some good ol’ Truth n’ Dare?"
+    b "So, I just had this PERFECT idea to kill some time, how about we play some good ol' Truth n' Dare?"
 
     hide b
 
@@ -220,7 +220,7 @@ label truth_dare:
     hide c
 
     show b flattered
-    b "Perfect, I’ll start with Truth:
+    b "Perfect, I'll start with Truth:
     Do you feel a {i}deep{/i} connection between us, a match made in haven, like Bread and Butter, bees and flowers, ketchup and mustard..."
     "... and how for every light, there is a shadow, and for every yin, a yang..."
     "... for every corn there is a dog, and for every pop star fanclub, a deluge of haters."
@@ -231,7 +231,7 @@ label truth_dare:
     
     hide b
 
-    "He’s not stopping..."
+    "He's not stopping..."
 
     menu:
         "Do something about it?"
